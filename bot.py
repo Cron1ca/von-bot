@@ -4,6 +4,7 @@ from discord.ext import commands, tasks
 import json
 import os
 import random
+import nacl
 
 
 
