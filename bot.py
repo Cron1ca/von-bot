@@ -24,7 +24,8 @@ async def on_ready():
 async def play_m():
     bot.time = random.randint(10, 15)
     channel = bot.get_channel(878423065149726764)
-    print(channel.members)
+    if channel.members == None:
+        return
     await channel.connect()
 
 
