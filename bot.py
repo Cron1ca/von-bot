@@ -18,6 +18,7 @@ bot.time = random.randint(10, 15)
 async def on_ready():
     print(f"We have logged in as {bot.user}")
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name =f"yo bitch"))
+    play_m.start()
 
 
 @tasks.loop(minutes=bot.time)
